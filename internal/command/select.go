@@ -3,7 +3,7 @@ package command
 import (
 	"errors"
 
-	"totp-cli/internal/account"
+	"github.com/robby031/totp-cli/internal/account"
 )
 
 var errNoAccounts = errors.New("belum ada akun, gunakan: totp add <name>")

@@ -5,7 +5,7 @@ import (
 	"io"
 	"time"
 
-	"totp-cli/internal/account"
+	"github.com/robby031/totp-cli/internal/account"
 )
 
 func writeCodes(w io.Writer, accounts []account.Account, now time.Time) error {

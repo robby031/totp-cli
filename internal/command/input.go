@@ -7,9 +7,8 @@ import (
 	"os"
 	"strings"
 
+	"github.com/robby031/totp-cli/internal/storage"
 	"golang.org/x/term"
-
-	"totp-cli/internal/storage"
 )
 
 func (r *Runner) Password(confirm bool) (string, error) {

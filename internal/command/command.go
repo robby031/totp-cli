@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	"totp-cli/internal/storage"
+	"github.com/robby031/totp-cli/internal/storage"
 )
 
 const usage = `Usage:
@@ -14,7 +14,9 @@ const usage = `Usage:
   totp code [name]      Tampilkan kode sekali untuk satu akun, atau semua akun
   totp watch [name]     Pantau kode secara realtime
   totp list             Tampilkan daftar akun
-  totp remove <name>    Hapus akun`
+  totp remove <name>    Hapus akun
+  totp help    			Tampilkan command
+  totp --version        Tampilkan versi`
 
 var errUsage = errors.New(usage)
 

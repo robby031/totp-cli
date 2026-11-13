@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	"totp-cli/internal/account"
+	"github.com/robby031/totp-cli/internal/account"
 )
 
 const clearScreen = "\033[H\033[J"

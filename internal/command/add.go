@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"totp-cli/internal/account"
+	"github.com/robby031/totp-cli/internal/account"
 )
 
 func (r *Runner) runAdd(args []string) error {

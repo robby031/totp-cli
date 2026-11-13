@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"totp-cli/internal/account"
+	"github.com/robby031/totp-cli/internal/account"
 )
 
 var (
