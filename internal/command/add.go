@@ -18,7 +18,7 @@ func (r *Runner) runAdd(args []string) error {
 		return account.ErrEmptyName
 	}
 
-	secret, err := r.readLine("Secret (Base32): ", true)
+	secret, err := r.readVisibleAndClear("Secret (Base32): ")
 	if err != nil {
 		return err
 	}
@@ -34,6 +34,6 @@ func (r *Runner) runAdd(args []string) error {
 	if err := r.store.Add(acc); err != nil {
 		return friendlyError(err, name)
 	}
-	fmt.Fprintf(r.out, "Account %q added\n", acc.Name)
+	fmt.Fprintf(r.out, "Akun %q ditambahkan\n", acc.Name)
 	return nil
 }

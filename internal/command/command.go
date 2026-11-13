@@ -10,9 +10,9 @@ import (
 )
 
 const usage = `Usage:
-  totp add <name>       Tambah akun (secret dibaca dari prompt/stdin)
+  totp add <name>       Tambah akun
   totp code [name]      Tampilkan kode sekali untuk satu akun, atau semua akun
-  totp watch [name]     Pantau kode secara realtime (Ctrl+C untuk keluar)
+  totp watch [name]     Pantau kode secara realtime
   totp list             Tampilkan daftar akun
   totp remove <name>    Hapus akun`
 
