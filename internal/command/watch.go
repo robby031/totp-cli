@@ -1,7 +1,6 @@
 package command
 
 import (
-	"bytes"
 	"context"
 	"fmt"
 	"os"
@@ -42,16 +41,4 @@ func (r *Runner) watchCodes(ctx context.Context, accounts []account.Account) err
 		case <-timer.C:
 		}
 	}
-}
-
-func (r *Runner) renderFrame(accounts []account.Account, now time.Time) error {
-	var frame bytes.Buffer
-	frame.WriteString(clearScreen)
-	if err := writeCodes(&frame, accounts, now); err != nil {
-		return err
-	}
-	frame.WriteString("\nCtrl+C untuk keluar\n")
-
-	_, err := r.out.Write(frame.Bytes())
-	return err
 }
